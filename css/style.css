@@ -1,0 +1,22 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+/* headder */
+.navbar{
+    list-style: none;
+    background-color: #88002d;
+}
+.nav-item{
+	text-decoration: none;
+	font-size: 1.2em;
+    padding: 5px 10px;
+    color: grey;
+    text-transform: uppercase;
+}
+.background{
+    background-image: url(../img/grapes1.jpg);
+    opacity: 0.8;
+    background-size: auto;
+    background-attachment: fixed;
+    height: 500px;
+}
+

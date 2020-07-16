@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to top  left, #3e0018 10%, #88002d 100%);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+input{
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    border: none;
+    background-color: rgba(255,255,255,.4)
+}
+::placeholder{
+    color: #34495e;
+    font-size: 1.2em;
+}
+input[type="submit"]{
+    border: 1px solid transparent;
+    background-color: #1d8d77;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    transition: all .3s;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.login{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.cube1{
+    background-color: #3e0018;
+    opacity: .7;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 30px;
+    bottom: -100px;
+    left: -100px;
+    animation: cube1 20s infinite;
+    z-index: -1;
+}
+@keyframes cube1 {
+    form{
+        bottom: -100px;
+        left: -100px;
+    }
+    50%{
+        bottom: 400px;
+        left: 400px;
+    }
+    to{
+        bottom: -100px;
+        left: -100px;
+    }
+}
+
+.cube2{
+    background-color: #3e0018;
+    opacity: .4;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    border-radius: 50px;
+    animation: cube2 30s infinite;
+    z-index: -1;
+}
+@keyframes cube2 {
+    form{
+        bottom: -100px;
+        left: 50%;
+    }
+    to{
+        bottom: 1000px;
+        left: 50%;
+    }
+}
+
+[class*="cube3"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3e0018;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    animation: cube3 15s infinite;
+    z-index: -1;
+
+}
+.cube3-1{
+    left: 30%;
+}
+.cube3-3{
+    left: 80%;
+}
+@keyframes cube3 {
+    form{
+        bottom: 0;
+    }
+    to{
+        bottom: 1000px;
+    }
+}
+
+[class*="cube4"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3e0018;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    animation: cube3 23s infinite;
+    z-index: -1;
+
+}
+.cube4-1{
+    left: 20%;
+}
+.cube4-2{
+    left: 40%;
+}
+.cube4-3{
+    left: 70%;
+}
+@keyframes cube4 {
+    form{
+        bottom: 0;
+    }
+    to{
+        bottom: 1000px;
+    }
+}
